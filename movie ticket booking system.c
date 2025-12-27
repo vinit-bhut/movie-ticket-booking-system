@@ -125,7 +125,7 @@ void book_seats() {
                     i--;
                 } else {
                     temp->status = '-';
-                    pin[i] = temp;
+                    pin[i] = (int)temp;
                     strcpy(temp->name, name);
                 }
             } else {
@@ -136,7 +136,7 @@ void book_seats() {
                     i--;
                 } else {
                     temp->status = '-';
-                    pin[i] = temp;
+                    pin[i] = (int)temp;
                     strcpy(temp->name, name);
                 }
             }
@@ -232,4 +232,5 @@ int main() {
     } while (choice != 4);
 
     return 0;
+
 }
